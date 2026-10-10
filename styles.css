@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1D1F1C;
+}
+
+.page-wrapper{
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    gap:20px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+}
+
+.photo-container{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+    -webkit-mask-image: radial-gradient(
+        circle,
+        black 65%,
+        transparent 100%
+    );
+    mask-image: radial-gradient(
+        circle,
+        black 65%,
+        transparent 100%
+    );
+}
+
+.intro-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Azonix';
+    min-width: 300px;
+}
+
+.intro-2{
+    font-family: 'Gotham-Bold';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hr-blue{
+    border: none;
+    height: 5px;
+    background-color: #00B1BA;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+/* TIPOGRAFÍAS*/
+
+@font-face {
+    font-family: 'Azonix';
+    src: url(tipografias/Azonix.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(tipografias/Gotham\ Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-BoldItalic';
+    src: url(tipografias/Gotham\ Bold\ Italic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url(tipografias/Gotham\ Book.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
