@@ -71,6 +71,7 @@ header{
     align-items: center;
 
     font-family: 'Azonix';
+    font-weight: 100;
     min-width: 300px;
 }
 
@@ -82,20 +83,91 @@ header{
     align-items: center;
 }
 
+.about-me{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.about-me h2{
+    font-family: 'Azonix';
+    font-weight: 100;
+    color: #f6f6f6;
+}
+
+.top-about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    max-width: 200px;
+}
+
+.quote{
+    font-family: 'Gotham-BoldItalic';
+    font-size: 24px;
+    color: #f6f6f6;
+    padding: 20px;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gotham-Book';
+    font-size: 16px;
+    color: #f6f6f6;
+    gap: 10PX;
+    padding: 0 20px 20px 20px;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 20px;
+}
+
+.hobbies-1{
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hobbies-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hr-orange{
+    border: none;
+    height: 5px;
+    background-color: #FF6A00;
+    width: 350px;
+    margin: 5px 0;
+    border-radius: 50px;
+}
+
 .hr-blue{
     border: none;
     height: 5px;
     background-color: #00B1BA;
     width: 100%;
-    margin: 10px 0;
+    margin: 5px 0;
     border-radius: 50px;
 }
-
-
-
-
-
-
 
 /* TIPOGRAFÍAS*/
 
