@@ -398,6 +398,291 @@ main{
 
 }
 
+/*CONTENIDO DEV*/
+.devContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.dev-title{
+    font-family: 'Azonix';
+    color: #F07216;
+    font-size: 30px;
+}
+
+.dev-subtitle{
+    font-family: 'Gotham-Bold';
+    color: #00B1BA;
+    font-size: 20px;
+}
+
+.proyectosDev{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+}
+
+.proyectosDev div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.proyectosDev a{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+}
+
+.proyectoDev{
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    object-fit: contain ;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.devContainer p{
+    font-family: 'Gotham-Book';
+    font-weight: 400;
+    color: #f6f6f6;
+}
+
+/*Contenedor GAMER*/
+
+#gaming-Screen .screen-content{
+    max-width: 1650px;
+    width: 90%;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.fav-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.fav{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+
+    transform: scale(1);
+    transition: transform 0.6s ease;
+}
+
+.fav:hover{
+    transform: scale(1.1);
+}
+
+.game-img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+    border-color: #2a2a2a;
+    border: 1px solid;
+
+    transition: border-color 0.8s ease;
+}
+
+.game-img:hover{
+    border-color: #00B1BA;
+}
+
+.gaming-title{
+    font-family: 'Azonix';
+    font-weight: 100;
+    font-size: 30px;
+    color: #F07216;
+}
+
+.gaming-subtitle{
+    font-family: 'Azonix';
+    color: #00B1BA;
+    font-size: 20px;
+}
+
+.game-title{
+    font-family: 'Gotham-Book';
+    font-weight: 400;
+    color: #f6f6f6;
+}
+
+.creators{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.creators-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.creator{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    transform: scale(1);
+    transition: transform 0.6s ease;
+}
+
+.creator:hover{
+    transform: scale(1.1);
+}
+
+.creator-img{
+    width: 150px;
+    height: auto;
+    border-radius: 100px;
+
+    border: 3px solid;
+    border-color: #2a2a2a;
+    transition: border-color 0.8s ease;
+}
+
+.creator-img:hover{
+    border-color: #00B1BA;
+}
+
+/*Contenedor Photo*/
+
+#photo-Screen .screen-content {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    max-height: 100vh !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 20px 40px !important;
+    background-color: rgba(14, 15, 13, 0.96) !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen-gallery {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.close-gallery-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f6f6f6;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.close-gallery-btn:hover {
+    background-color: #2a2a2a;
+    border-color: #00B1BA;
+    color: #00B1BA;
+}
+
+.fullscreen-stage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stage-photo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.fullscreen-thumbnails {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    height: 90px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #00B1BA #1D1F1C;
+}
+
+.fs-thumb {
+    height: 100%;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.4;
+    border: 2px solid transparent;
+    flex-shrink: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.fs-thumb:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.fs-thumb.active-fs-thumb {
+    opacity: 1;
+    border-color: #00B1BA;
+    transform: scale(1.05);
+}
+
 /* TIPOGRAFÍAS*/
 
 @font-face {
